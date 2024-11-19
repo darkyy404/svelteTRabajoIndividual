@@ -65,21 +65,74 @@
   </script>
   
   <style>
+	:global(body) {
+	  font-family: 'Inter', Arial, sans-serif;
+	  background: #f9fafe;
+	  margin: 0;
+	  padding: 0;
+	}
+  
 	.container {
 	  padding: 20px;
 	  max-width: 600px;
 	  margin: auto;
+	  background: white;
+	  border-radius: 16px;
+	  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	}
+  
 	.header {
 	  display: flex;
 	  justify-content: space-between;
 	  align-items: center;
 	}
+  
+	h1 {
+	  font-size: 1.5rem;
+	  color: #333;
+	  margin: 0;
+	}
+  
+	.header button {
+	  background: #e4f4ff;
+	  border: none;
+	  border-radius: 50%;
+	  width: 40px;
+	  height: 40px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  font-size: 1.5rem;
+	  color: #4a90e2;
+	  cursor: pointer;
+	}
+  
 	.search-bar {
 	  display: flex;
 	  gap: 8px;
 	  margin: 16px 0;
+	  background: #f3f5f8;
+	  padding: 8px 16px;
+	  border-radius: 12px;
+	  align-items: center;
 	}
+  
+	.search-bar input {
+	  flex-grow: 1;
+	  border: none;
+	  background: none;
+	  font-size: 1rem;
+	  outline: none;
+	}
+  
+	.search-bar button {
+	  background: transparent;
+	  border: none;
+	  font-size: 1.2rem;
+	  color: #a9b0c6;
+	  cursor: pointer;
+	}
+  
 	.list {
 	  display: flex;
 	  flex-direction: column;
